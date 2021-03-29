@@ -3,7 +3,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 670px;
-        grid-template-rows: minmax(245px, auto) minmax(255px,auto);
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
         grid-auto-rows: minmax(245px, auto);
         column-gap: 70px;
         row-gap: 40px;
@@ -22,30 +22,24 @@
     }
     &__title {
         position: relative;
-        padding-left: 12px;
-        padding-top: 1px;
+        padding: 1px 0 0 12px;
         @include before_circle;
     }
     &__text {
-        font-weight: 500;
+        margin-top: 20px;
         font-size: 14px;
         line-height: 21px;
-        color: #000;
-        margin-top: 20px;
     }
     &__skills {
         display: grid;
-        grid-template: repeat(2, minmax(116px, auto)) / repeat(2, 260px);
-        grid-auto-rows: repeat(2, 1fr);
+        grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
+        grid-auto-rows: 1fr;
         column-gap: 50px;
         row-gap: 20px;
-        // padding-left: 50px;
         &-item {
             display: grid;
             grid-template-columns: 40px 200px;
             column-gap: 20px;
-
-            
         }
         &-circle {
             position: relative;
@@ -56,9 +50,9 @@
             }
         }
         &-text {
+            margin-top: 6px;
             font-size: 12px;
             line-height: 18px;
-            margin-top: 6px;
         }
     }
 }

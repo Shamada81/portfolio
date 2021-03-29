@@ -16,9 +16,9 @@
     &__btns {
         margin-top: 25px;
         display: flex;
-        width: 250px;
         align-items: center;
-        justify-content: space-between; 
+        justify-content: space-between;
+        width: 250px;
     }
     &__link {
         color: #000;
@@ -29,3 +29,4 @@
         }
     }
 }
+
